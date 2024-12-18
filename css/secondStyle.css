@@ -130,7 +130,7 @@ h3 {
   /* Общий контейнер */
   .wrap-second {
     width: 100%;
-    padding: 10px;
+    padding: 0 10px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -140,11 +140,11 @@ h3 {
   .second {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 0 10px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    gap: 15px;
+
   }
 
   /* Левая колонка */
@@ -166,6 +166,8 @@ h3 {
     margin: 0 auto;
     text-align: center;
     font-size: 16px;
+    position: relative;
+    top: -80px;
   }
   .text-second-page {
     display: flex;
@@ -181,13 +183,13 @@ h3 {
     margin: 0 auto;
     width: 70%;
     position: relative;
-    top: -80px;  
+    top: -90px;  
   }
   .orbis-second-page {
     display: block;
     position: relative;
     left: 100px;
-    top: -80px;
+    top: -100px;
   }
 
   /* Кнопки */
@@ -195,7 +197,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    top: -150px;
+    top: -170px;
     left: -120px;
   }
 
@@ -236,7 +238,7 @@ h3 {
     width: 100%; /* Убедитесь, что блок занимает всю ширину */
     margin-top: 0; /* Сбрасываем любые отрицательные отступы */
     position: relative; /* Убедитесь, что позиция корректная */
-    z-index: 10; /* Поднимаем блок выше других */
+    z-index: 2; /* Поднимаем блок выше других */
    
   }
 
