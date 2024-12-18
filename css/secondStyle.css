@@ -235,7 +235,7 @@ h3 {
     justify-content: center;
     align-items: center;
     width: 100%; /* Убедитесь, что блок занимает всю ширину */
-    margin-top: 0; /* Сбрасываем любые отрицательные отступы */
+    margin-top: 10px; /* Сбрасываем любые отрицательные отступы */
     position: relative; /* Убедитесь, что позиция корректная */
     z-index: 2; /* Поднимаем блок выше других */
    
@@ -256,7 +256,7 @@ h3 {
 
   .liebe {
     width: 130px;
-    margin: 20px auto;
+    margin: 10px auto;
   }
 
 }
