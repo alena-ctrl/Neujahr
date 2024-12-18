@@ -164,6 +164,7 @@ h3 {
     padding-top: 0;
     padding: auto;
     margin-inline: auto;
+    min-height: 100vh;
 }
 .second {
   display: grid;
