@@ -125,62 +125,125 @@ h3 {
     color: #142c57;
   }
 }
-
-/* Адаптация для устройств с шириной до 430px (iPhone 14 Pro Max) */
-@media only screen and (max-width: 430px) {
+/* Общие стили для мобильных устройств с шириной экрана 430px и выше */
+@media only screen and (min-width: 430px) {
+  /* Общий контейнер */
   .wrap-second {
+    width: 100%;
     padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .second {
-    padding: 15px;
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 15px;
   }
 
+  /* Левая колонка */
+  .second-left {
+    display: none; /* Скрываем на мобильных устройствах */
+  }
+
+  /* Правая колонка */
   .second-right {
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
   }
 
   .text-second-wrap {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-
-  .button_r a {
-    width: 40px;
-    height: 40px;
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
     font-size: 16px;
   }
 
-  .text_links_r {
-    font-size: 12px;
+  .orbis-second-page {
+    display: block;
+    position: relative;
+    left: 100px;
   }
+
+  /* Кнопки */
   .fulls {
-
-    top: -120px;
-    left: 20px;
-  }
-}
-
-/* Адаптация для устройств с шириной более 430px */
-@media only screen and (min-width: 430px) {
-  .second {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    top: -110px;
+    left: -120px;
   }
 
-  .second-right {
-    text-align: left;
-    gap: 20px;
+  .button_r {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 
   .button_r a {
-    width: 60px;
-    height: 60px;
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;  
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
   }
+
+  /* Текстовые элементы */
+  .text_links_r {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #142c57;
+    position: static;
+  
+  }
+
+  /* SVG-анимация */
+  .snow-page-second {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Дополнительные элементы */
+  .kunden {
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .liebe {
+    width: 150px;
+    margin: 20px auto;
+  }
+
+
+  /* Убираем фиксированные позиции для адаптации 
+  .text_links_l,
+  .orbis-second-page {
+    position: static;
+    margin: 10px auto;
+
+  }*/
 }
+
 
 
 @media (min-width: 500px) {
