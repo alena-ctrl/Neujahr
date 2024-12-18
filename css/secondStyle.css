@@ -127,11 +127,10 @@ h3 {
 }
 /* Общие стили для мобильных устройств с шириной экрана 430px и выше */
 @media only screen and (min-width: 430px) {
-  /* Общий контейнер */
   .wrap-second {
     width: 100%;
     padding: 0 10px;
-    margin: 0 auto;
+    margin: 10px auto 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,15 +143,12 @@ h3 {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
   }
 
-  /* Левая колонка */
   .second-left {
-    display: none; /* Скрываем на мобильных устройствах */
+    display: none; 
   }
 
-  /* Правая колонка */
   .second-right {
     display: flex;
     flex-direction: column;
@@ -166,8 +162,8 @@ h3 {
     margin: 0 auto;
     text-align: center;
     font-size: 16px;
-
   }
+
   .text-second-page {
     display: flex;
     flex-wrap: wrap; 
@@ -176,14 +172,15 @@ h3 {
     color: black;
     position: relative;
     top: -80px;
-
   }
+
   .sing-second-page {
     margin: 0 auto;
     width: 70%;
     position: relative;
     top: -90px;  
   }
+  
   .orbis-second-page {
     display: block;
     position: relative;
@@ -191,7 +188,6 @@ h3 {
     top: -100px;
   }
 
-  /* Кнопки */
   .fulls {
     display: flex;
     flex-wrap: wrap;
@@ -221,37 +217,33 @@ h3 {
     text-decoration: none;
   }
 
-  /* Текстовые элементы */
   .text_links_r {
     font-size: 14px;
     margin-top: 10px;
     color: #142c57;
-    position: static;
-  
+    position: static;  
   }
-  /* Контейнер блока snow-second-page */
+
   .snow-second-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Убедитесь, что блок занимает всю ширину */
-    margin-top: 10px; /* Сбрасываем любые отрицательные отступы */
-    position: relative; /* Убедитесь, что позиция корректная */
-    z-index: 2; /* Поднимаем блок выше других */
-   
+    width: 100%; 
+    margin-top: 10px;
+    position: relative; 
+    z-index: 2;   
   }
 
   .snow-second-page svg {
-    width: 100%; /* SVG адаптируется по ширине */
-    max-width: 400px; /* Устанавливаем максимальную ширину для крупных экранов */
+    width: 100%;
+    max-width: 400px; 
     height: auto;
   }
 
-  /* Дополнительные элементы */
   .kunden {
     width: 90%;
     text-align: center;
-    margin: 20px auto;
+    margin: 10px auto 20px;
   }
 
   .liebe {
