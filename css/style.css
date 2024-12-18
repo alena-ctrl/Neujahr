@@ -108,7 +108,7 @@ body {
   
   .orbis-1 {
     text-align: right; 
-    margin-right: 20px;
+    margin-right: 0px;
   }
   .orbis-1 svg {
     width: 100px; 
@@ -173,7 +173,7 @@ body {
     height: 100%;
     padding-right: 0;
   }
-
+  
 }
 
 /*-- ======================= 740  ======================== */
