@@ -212,6 +212,12 @@ h3 {
     position: static;
   
   }
+  .snow-second-page {
+    display: flex;
+    width: 100%;  
+    padding: 0 10px;
+    align-items: first baseline;
+  }
 
   /* SVG-анимация */
   .snow-page-second {
