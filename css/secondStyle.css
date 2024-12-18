@@ -278,7 +278,7 @@ h3 {
 
 
 /*-- ======================= 740  ======================== */
-@media (max-width: 740px) {
+@media (min-width: 740px) {
 .wrap-second {  
     width: 1400px;
     height: 100vh;
@@ -370,12 +370,11 @@ h3 {
 .second-right {
   width: 720px;
   height: 540px; 
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
 
-  /*   
+  gap: 10px;
+
+
+    
   display: grid;
   grid-template-areas:
       "d1"
@@ -383,11 +382,11 @@ h3 {
       "n1"
       "f1";
   align-items: center;
-  justify-content: center; */
+  justify-content: center; 
  
 }
 .snow-second-page {
-  /*grid-area: d1;*/
+  grid-area: d1;
   width: 100%;
   display: flex;
   padding-top: 20px;
@@ -400,7 +399,6 @@ h3 {
   width: 100%;
   max-width: 600px; 
   height: auto;
-
 }
 .text-second-wrap {
   grid-area: v1;
