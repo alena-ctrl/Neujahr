@@ -281,10 +281,10 @@ h3 {
 @media (min-width: 740px) {
 .wrap-second {  
     width: 1400px;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 0;
+    justify-content: center;
     margin-inline: auto;
 
 }
@@ -369,32 +369,48 @@ h3 {
 
 .second-right {
   width: 720px;
-  height: 540px;    
+  height: 540px; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+
+  /*   
   display: grid;
   grid-template-areas:
-      "d1 d1"
-      "v1 v1"
-      "n1 n1"
-      "f1 f1"
-;
+      "d1"
+      "v1"
+      "n1"
+      "f1";
   align-items: center;
-  justify-content: center; 
+  justify-content: center; */
+ 
 }
 .snow-second-page {
-  grid-area: d1;
-  display: flex;
+  /*grid-area: d1;*/
   width: 100%;
+  display: flex;
+  padding-top: 20px;
+  padding-inline: 0;
+  margin-bottom: 20px;
+
 }
 
+.snow-second-page svg {
+  width: 100%;
+  max-width: 600px; 
+  height: auto;
+}
+}
 .text-second-wrap {
   grid-area: v1;
   display: none;
 }
 
 .text-second-page {
-  grid-area: n1;
+  /*grid-area: n1;*/
   width: 100%;
-  margin-inline: 10px;
+  margin-inline: 20px;
   text-align: center;
   padding: 0 60px;
   display: flex;
@@ -402,7 +418,7 @@ h3 {
   justify-content: center; 
   color: black;
   position: relative;
-  top: -80px;
+  top: -75px;
 }
 
 .sing-second-page {
