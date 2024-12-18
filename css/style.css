@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+*{
+  box-sizing: border-box;
+}
+body {
+  background-color: #000033;
+  margin: 0px;
+  overflow: hidden;
+
+}
+ 
+/*----------------------------
+	.-- sneg
+-----------------------------*/
+#container {
+  width: 100%; 
+  min-height: 100vh; 
+  text-align: center;
+  color: #ffffff;
+  background-image: url('https://www.krasotaiskusstva.com/themes/merry-christmas/_images/snowh.png'), url('https://www.krasotaiskusstva.com/themes/merry-christmas/_images/snow3q.png'), url('https://www.krasotaiskusstva.com/themes/merry-christmas/_images/snow2l.png');
+  -webkit-animation: snow 20s linear infinite;
+  -moz-animation: snow 20s linear infinite;
+  -ms-animation: snow 20s linear infinite;
+  animation: snow 20s linear infinite;
+}
+/*----------------------------
+	.-- Key Frames
+-----------------------------*/
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
+}
+@-moz-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
+}
+@-webkit-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
+}
+@-ms-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
+}
+/*----------------------------
+	.-- konez sneg
+-----------------------------*/
+.snow-ball {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  animation: snowball 4s linear infinite;
+}
+@keyframes snowball {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+/* ================= merzanie */
+
+
+@media only screen and (min-width: 375px) {
+  .wrap {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 10px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .first {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-inline: 0;
+    display: grid;
+    grid-template-areas:
+    "a b"
+    "c c";
+    background: #ffffff;  
+  }
+
+  .item3 {
+    grid-area: c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .orbis-1 {
+    text-align: right; 
+    margin-right: 0px;
+  }
+  .orbis-1 svg {
+    width: 100px; 
+  
+  }
+    .button-orbis-container {
+    padding: 0;
+   
+  }
+  
+  .button {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    }
+  
+  .button a {
+      width: 30px;
+      height: 40px;
+      text-decoration: none;
+      margin-left: 30%;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  .text_links {
+    margin-left: 20px;
+    width: 150px;  
+    color: #142c57;
+  }  
+  .erst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .snow {
+    padding: 2px;
+  }
+  
+  .frohe {  
+    display: block;
+    margin-right: 2rem;
+  }
+  
+  .frohe-top {
+    width: 70%;
+    margin-left: auto;
+    margin-top: 30px;
+  }
+  .frohe-bottom {
+    width: 100%;
+    margin-left: auto;
+  }
+  .balls {
+   margin-right: 0;
+  }
+  .balls svg {
+    height: 100%;
+    padding-right: 0;
+  }
+  
+}
+
+/*-- ======================= 740  ======================== */
+@media (min-width: 740px) {
+  .wrap {
+    max-width: 720px; 
+    min-height: 100vh;
+  }
+  
+  /* ================= first */
+  
+  .first {
+    width: 720px;
+    height: 540px; 
+    padding-top: 0; 
+  }
+  
+  .item1 {
+    grid-area: a;
+    width: 400px;
+  }
+  
+  .item2 {
+    grid-area: b;
+    width: 300px;
+  }
+  .item3 {
+    grid-area: c;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding-bottom: 50px;
+  }
+
+  .button {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 60px;
+    height: 60px;    
+    border: 2px solid #000033;
+    border-radius: 50px; 
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.erst{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+.orbis-1 {
+  text-align: right; 
+  margin-right: 20px;
+}
+.frohe-top {
+  width: 60%;
+  margin-left: auto;
+  margin-top: 30px;
+}
+.frohe-bottom {
+  width: 90%;
+  margin-left: auto;
+}
+}
