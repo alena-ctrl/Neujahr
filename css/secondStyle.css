@@ -156,7 +156,7 @@ h3 {
   .second-right {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
     width: 100%;
   }
@@ -166,8 +166,7 @@ h3 {
     margin: 0 auto;
     text-align: center;
     font-size: 16px;
-    position: relative;
-    top: -80px;
+
   }
   .text-second-page {
     display: flex;
@@ -181,7 +180,7 @@ h3 {
   }
   .sing-second-page {
     margin: 0 auto;
-    width: 70%;
+    width: 50%;
     position: relative;
     top: -90px;  
   }
