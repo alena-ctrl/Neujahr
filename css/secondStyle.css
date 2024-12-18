@@ -278,7 +278,7 @@ h3 {
 
 
 /*-- ======================= 740  ======================== */
-@media (min-width: 740px) {
+@media (max-width: 740px) {
 .wrap-second {  
     width: 1400px;
     height: 100vh;
