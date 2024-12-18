@@ -228,11 +228,23 @@ h3 {
     position: static;
   
   }
+  /* Контейнер блока snow-second-page */
   .snow-second-page {
     display: flex;
-    width: 100%;  
-    padding: 0 10px;
-  
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Убедитесь, что блок занимает всю ширину */
+    padding: 20px 0; /* Добавляем отступы */
+    margin-top: 0; /* Сбрасываем любые отрицательные отступы */
+    position: relative; /* Убедитесь, что позиция корректная */
+    z-index: 10; /* Поднимаем блок выше других */
+   
+  }
+
+  .snow-second-page svg {
+    width: 100%; /* SVG адаптируется по ширине */
+    max-width: 400px; /* Устанавливаем максимальную ширину для крупных экранов */
+    height: auto;
   }
 
   /* Дополнительные элементы */
