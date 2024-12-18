@@ -41,7 +41,6 @@ h3 {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center; 
-
   }
   .snow-second-page {
     display: flex;
@@ -127,7 +126,61 @@ h3 {
   }
 }
 
+/* Адаптация для устройств с шириной до 430px (iPhone 14 Pro Max) */
+@media only screen and (max-width: 430px) {
+  .wrap-second {
+    padding: 10px;
+  }
 
+  .second {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .second-right {
+    gap: 10px;
+  }
+
+  .text-second-wrap {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .button_r a {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .text_links_r {
+    font-size: 12px;
+  }
+  .fulls {
+
+    top: -120px;
+    left: 20px;
+  }
+}
+
+/* Адаптация для устройств с шириной более 430px */
+@media only screen and (min-width: 430px) {
+  .second {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .second-right {
+    text-align: left;
+    gap: 20px;
+  }
+
+  .button_r a {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+}
 
 
 @media (min-width: 500px) {
@@ -160,7 +213,6 @@ h3 {
     display: flex;
     align-items: center;
     padding-top: 0;
-    padding: auto;
     margin-inline: auto;
 
 }
