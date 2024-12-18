@@ -136,7 +136,7 @@ h3 {
 @media (min-width: 500px) {
   .second {
     height: auto;
-    min-height: 90vh;
+
 }
   .sing-second-page {
     margin: 0 auto;
